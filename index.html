@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Encriptador</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.1.2/css/all.min.css">
+</head>
+<body>
+    <main>
+        <header>
+            <img src="assets/Logo (1).png" alt="Logo de Alura">
+            <h1>Encriptador Alura</h1>
+        </header>
+        <div class="input-container">
+            <textarea name="" id="input" cols="30" rows="10" placeholder="Ingrese el texto aqui" autocapitalize="none"></textarea>
+            <p class="warning"><i class="fa-solid fa-circle-exclamation"></i>Solo ingrese minúsculas y sin acentos</p>
+        </div>  
+        <div class="buttons-container">
+            <button class="encrypt" id="btnEncriptar">Encriptar <i class="fa-solid fa-lock"></i></button>
+            <button class="desencrypt" id="btnDesencriptar">Desencriptar <i class="fa-solid fa-lock-open"></i></button>
+            <i class="fa-solid fa-arrow-rotate-right" id="btnRefresh"></i>
+        </div>  
+        <div class="text-container">
+            <h2 class="plantilla" id="plantilla">Ningún mensaje fue encontrado</h2>
+            <p id="txtEncriptado"></p>
+            <button id="copy">Copiar</button>
+            <img src="assets/Muñeco.png" alt="Muñeco encriptador Alura" class="muñeco" id="muñeco">
+        </div>
+    </main>
+    <footer>
+        <h6><i class="fa-solid fa-copyright"></i>2022 - Mariana Davies - Challenge Alura / Oracle Next Education</h6>
+    </footer>
+
+    <script src="main.js"></script>
+</body>
+</html>
